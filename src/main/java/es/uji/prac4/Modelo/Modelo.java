@@ -1,9 +1,11 @@
 package es.uji.prac4.Modelo;
 
-import es.uji.prac4.Vista.Vista;
+import es.uji.prac4.Vista.ImplementacionVista;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
 
 public interface Modelo {
-    void setVista(Vista vista);
-    void setDistancia(String tipo_distancia);
-    void setAlgoritmo(String algoritmo);
+    List<String> createSongNameList(String fichero_canciones) throws IOException;
 }
